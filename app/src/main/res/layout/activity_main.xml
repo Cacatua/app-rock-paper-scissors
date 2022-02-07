@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_app_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_choice"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/iv_app_choice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_app_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/padrao"
+        app:layout_constraintBottom_toTopOf="@id/tv_result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_app_choice" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_rock"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/pedra"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/iv_paper"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <ImageView
+        android:id="@+id/iv_paper"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/papel"
+        app:layout_constraintLeft_toRightOf="@id/iv_rock"
+        app:layout_constraintRight_toLeftOf="@id/iv_scissors"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <ImageView
+        android:id="@+id/iv_scissors"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/tesoura"
+        app:layout_constraintLeft_toRightOf="@id/iv_paper"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rock paper scissors</string>
+    <string name="result">Escolha uma opção abaixo</string>
+    <string name="app_choice">Escolha do app</string>
+</resources>
